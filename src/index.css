@@ -1,5 +1,157 @@
-body {
-  margin: 0;
-  padding: 0;
+:root {
+  --primary-color: #FAFAFA;
+  --text-color: rgb(55, 55, 55);
+  --secondary-color: #858E97;
+}
+
+* {
   font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+/** Root */
+
+.main-container {
+  padding: 0 !important;
+}
+
+/** Nav */
+.navbar-thriven-logo {
+  width: 180px;
+  margin: 10px 50px;
+}
+
+.nav {
+  padding: 10px 50px;
+  width: 100%;
+  font-size: 18px;
+  background: white;
+}
+
+.nav li,
+.nav a {
+  color: var(--text-color);
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+
+/** Client Show **/
+
+.client {
+  margin: 30px auto;
+}
+
+.modal-client-name {
+  font-weight: bold;
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+/** Client list */
+
+.client-list-container {
+  margin-top: 50px;
+}
+
+.client-list-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.client-count-text {
+  font-size: 26px;
+}
+
+.client-count {
+  padding: 5px;
+}
+
+td {
+  vertical-align: middle !important;
+}
+
+/** Client form **/
+.client-form-container {
+  margin-top: 30px;
+}
+
+.client-form {
+  margin-top: 30px;
+}
+
+/** Investmets Show **/
+
+.title {
+  margin-bottom: 30px;
+}
+
+thead {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+.btn {
+  display: block;
+  margin: 20px auto;
+}
+
+.client-item:hover {
+  cursor: pointer;
+}
+
+/** Investment Edit */
+.investment-edit-container {
+  margin-top: 30px;
+}
+
+.investment-edit-container h1 {
+  margin-bottom: 30px;
+}
+
+/** Investment Item */
+.investment-item-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/** Payment Item */
+.pagination-link {
+  color: var(--text-color) !important;
+}
+
+/** Loader */
+.loader {
+  margin-top: 200px;
+}
+
+/** Email */
+.email-receipt {
+  box-shadow: 0 0 10px 2px grey;
+}
+
+.email-thriven-logo {
+  width: 250px;
+}
+
+.email-receipt-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.receipt-total-data {
+  font-weight: bold;
+}
+
+.email-receipt-button {
+  float: right;
 }
